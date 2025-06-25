@@ -66,7 +66,15 @@ function displayprice(){
 
    let bagsummaryElement=document.querySelector('.bag-summary'); 
     if (bagItems.length == 0) {
-    bagsummaryElement.innerHTML = `<div class="empty-bag-message">Your Bag is Empty</div>`;
+    bagsummaryElement.innerHTML = `<div class="emptybagMain">
+    <span class="material-symbols-outlined j">production_quantity_limits</span>
+    <div class="empty-bag-message"><h2>Hey,it feels so light!</h2>
+    <span class="tex">
+    There is nothing in your Bag, Let's add some items.
+    </span></div>
+    <button onclick="window.location.href='https://super-duper-meme-69xxx65qg44c46wv-5500.app.github.dev/'"><a href="https://super-duper-meme-69xxx65qg44c46wv-5500.app.github.dev/">Continue Shopping</a>
+    </button></div>`;
+    bagsummaryElement.classList.add("js-emptybagMain");
     return;
   }
   console.log(bagItems.length);
